@@ -2,11 +2,16 @@
 const test = require('node:test');
 const assert = require('node:assert');
 const {
-  parseCSV, escapeCSV, termKeys, domainFromText, checkDataset, readTable, CSV_PATH,
+  parseCSV, escapeCSV, termKeys, domainFromText, checkDataset,
 } = require('../lib/dataset');
 const { parseIssueBody, evaluateSubmission } = require('../lib/issue');
 
-const { records } = readTable(CSV_PATH);
+// A fixed fixture, so the tests do not change as the real dataset grows.
+const records = [
+  { term_id: 'SPORTS-001', term: 'punt', cultural_domain: 'American Sports: Football', domain_id: '1' },
+  { term_id: 'BIZ-001', term: 'sunset/sunsetting', cultural_domain: 'Silicon Valley Business', domain_id: '2' },
+  { term_id: 'HOUSE-003', term: 'lint/linter', cultural_domain: 'American Household', domain_id: '6' },
+];
 
 const API_BODY = `## New Term Submission
 
@@ -96,7 +101,7 @@ test('API-format issue parses and passes the gate', () => {
   assert.strictEqual(fields.country, 'India');
   const result = evaluateSubmission(fields, records);
   assert.strictEqual(result.status, 'ready');
-  assert.match(result.record.term_id, /^BIZ-\d{3}$/);
+  assert.strictEqual(result.record.term_id, 'BIZ-002');
   assert.strictEqual(result.record.domain_id, '2');
 });
 
