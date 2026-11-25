@@ -41,13 +41,13 @@ The core field is `affects_all_non_americans`. A "yes" marks a cultural barrier 
 This block is generated from the master CSV on every sync.
 
 <!-- stats:start -->
-- Validated terms: 31
-- Layer 1 terms (affect all non-Americans): 25 of 31 (81%)
-- Candidate terms awaiting review: 267
+- Validated terms: 32
+- Layer 1 terms (affect all non-Americans): 26 of 32 (81%)
+- Candidate terms awaiting review: 266
 
 | Domain | Validated terms |
 |---|---|
-| 1. American Sports | 5 |
+| 1. American Sports | 6 |
 | 2. Silicon Valley Business | 3 |
 | 3. Military and Cold War | 4 |
 | 4. American Food Culture | 3 |

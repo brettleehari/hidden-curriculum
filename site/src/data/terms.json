@@ -432,5 +432,19 @@
     "domain_id": 1,
     "contributor": "Hari Prasad Sudharsan",
     "source_citation": "Community contribution"
+  },
+  {
+    "term_id": "SPORTS-007",
+    "term": "slam dunk",
+    "cultural_domain": "American Sports",
+    "what_americans_see": "A basketball shot forced down through the hoop from above, a guaranteed score",
+    "what_software_means": "An obvious, easy win. A decision or fix with no real risk",
+    "where_it_appears": "Engineering meetings, product prioritization, sales calls",
+    "what_non_americans_read": "A forceful action of some kind",
+    "affects_all_non_americans": "yes",
+    "neutral_alternative": "sure win",
+    "domain_id": 1,
+    "contributor": "Hari Prasad Sudharsan",
+    "source_citation": "Community contribution"
   }
 ]
