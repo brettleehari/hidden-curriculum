@@ -1,0 +1,89 @@
+name: Submit a New Term
+description: Document an American cultural metaphor in software engineering
+title: "New Term: "
+labels: ["new-term", "pending-review"]
+body:
+  - type: input
+    id: term
+    attributes:
+      label: Term
+      description: The software engineering term
+      placeholder: e.g., playbook
+    validations:
+      required: true
+  - type: dropdown
+    id: domain
+    attributes:
+      label: Cultural Domain
+      options:
+        - "American Sports"
+        - "Silicon Valley Business"
+        - "Military and Cold War"
+        - "American Food Culture"
+        - "American Car Culture"
+        - "American Household"
+        - "Wild West and Frontier"
+        - "American Pop Culture"
+        - "American Industrial Trades"
+        - "Cybersecurity"
+        - "American Hacker Subculture"
+        - "American Slang"
+        - "Other"
+    validations:
+      required: true
+  - type: textarea
+    id: what_americans_see
+    attributes:
+      label: What Americans See
+      description: What does this word mean in American daily life?
+      placeholder: Describe the cultural reference Americans recognize
+    validations:
+      required: true
+  - type: textarea
+    id: what_software_means
+    attributes:
+      label: What Software Means
+      description: The technical definition in software engineering
+    validations:
+      required: true
+  - type: input
+    id: where_it_appears
+    attributes:
+      label: Where It Appears
+      description: Tools, frameworks, platforms
+      placeholder: e.g., Ansible, Git, AWS
+  - type: textarea
+    id: what_non_americans_read
+    attributes:
+      label: What Non-Americans Read
+      description: First literal interpretation without American context
+    validations:
+      required: true
+  - type: dropdown
+    id: affects_all
+    attributes:
+      label: Affects All Non-Americans?
+      description: Does this confuse even native English speakers outside the US?
+      options:
+        - "Yes"
+        - "No"
+    validations:
+      required: true
+  - type: input
+    id: neutral_alternative
+    attributes:
+      label: Neutral Alternative
+      description: A culturally-neutral replacement, if one exists
+  - type: input
+    id: contributor_name
+    attributes:
+      label: Your Name (optional)
+  - type: input
+    id: contributor_country
+    attributes:
+      label: Your Country (optional)
+  - type: textarea
+    id: personal_story
+    attributes:
+      label: Your Story (optional)
+      description: Share your personal experience with this term

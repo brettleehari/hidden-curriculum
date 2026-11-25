@@ -1,0 +1,26 @@
+name: Validate Dataset
+# The health gate. Runs on every pull request and every push touching the
+# data or the pipeline. Other workflows call it before they publish.
+on:
+  pull_request:
+  push:
+    branches: [main]
+    paths: ['data/**', 'scripts/**', '.github/workflows/**']
+  workflow_call:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Check the dataset against the schema and domain rules
+        run: node scripts/validate.js
+      - name: Test the pipeline scripts
+        run: node --test scripts/test/pipeline.test.js

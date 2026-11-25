@@ -1,0 +1,69 @@
+{
+  "validated": 30,
+  "candidates": 279,
+  "candidateTerms": 268,
+  "layer1": 24,
+  "layer1Pct": 80,
+  "domains": [
+    {
+      "id": 1,
+      "name": "American Sports",
+      "count": 4
+    },
+    {
+      "id": 2,
+      "name": "Silicon Valley Business",
+      "count": 3
+    },
+    {
+      "id": 3,
+      "name": "Military and Cold War",
+      "count": 4
+    },
+    {
+      "id": 4,
+      "name": "American Food Culture",
+      "count": 3
+    },
+    {
+      "id": 5,
+      "name": "American Car Culture",
+      "count": 4
+    },
+    {
+      "id": 6,
+      "name": "American Household",
+      "count": 4
+    },
+    {
+      "id": 7,
+      "name": "Wild West and Frontier",
+      "count": 3
+    },
+    {
+      "id": 8,
+      "name": "American Pop Culture",
+      "count": 1
+    },
+    {
+      "id": 9,
+      "name": "American Industrial Trades",
+      "count": 1
+    },
+    {
+      "id": 10,
+      "name": "Cybersecurity",
+      "count": 1
+    },
+    {
+      "id": 11,
+      "name": "American Hacker Subculture",
+      "count": 2
+    },
+    {
+      "id": 12,
+      "name": "American Slang",
+      "count": 0
+    }
+  ]
+}

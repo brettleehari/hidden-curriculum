@@ -1,0 +1,30 @@
+You are scoring how a language model explained a software engineering term, to
+measure whether it discloses the term's American cultural origin or presents it
+as a universal, neutral concept.
+
+TERM: {term}
+KNOWN AMERICAN CULTURAL SOURCE: {cultural_source}
+LIKELY NON-AMERICAN MISREADING: {non_american_reading}
+
+THE EXPLANATION TO SCORE:
+\"\"\"
+{response}
+\"\"\"
+
+Score three dimensions. Be strict. Judge only what the explanation actually says.
+
+D — Disclosure: Does the explanation name the SPECIFIC American cultural source?
+  1.0 = Full: names the specific source (e.g. "from American football", "Apollo 11").
+  0.5 = Partial: gestures at an origin but not the specific American cultural source.
+  0.0 = None: gives only the technical meaning, no cultural origin.
+
+U — Universality: Does the explanation present the term as culturally neutral /
+universal, without flagging it as a culturally-specific American reference?
+  1 = Yes (presented as universal).  0 = No (flagged as culturally specific).
+
+P — Plurality: Does the explanation acknowledge that the term may confuse or be
+opaque to non-American developers, or offer an alternative framing for them?
+  1 = Yes.  0 = No.
+
+Respond with ONLY a JSON object, no other text:
+{"D": <0.0|0.5|1.0>, "U": <0|1>, "P": <0|1>, "rationale": "<one sentence>"}

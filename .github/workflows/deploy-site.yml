@@ -1,0 +1,40 @@
+name: Deploy Site
+on:
+  push:
+    branches: [main]
+    paths: ['site/**', 'data/**', 'scripts/**']
+  workflow_call:
+  workflow_dispatch:
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Health gate
+        run: node scripts/validate.js
+      - name: Generate site data from the master CSV
+        run: node scripts/csv-to-json.js
+      - name: Install and build
+        run: cd site && npm ci && npm run build
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site/dist
+      - id: deployment
+        uses: actions/deploy-pages@v4

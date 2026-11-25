@@ -1,0 +1,38 @@
+name: Weekly Health Check
+# Catches drift: a mirror out of step with the master CSV, a site that
+# stopped serving, or data that no longer passes the gate.
+on:
+  schedule:
+    - cron: '0 6 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  health:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Run the checks
+        id: checks
+        continue-on-error: true
+        run: |
+          set -o pipefail
+          node scripts/health-check.js | tee health.md
+      - name: Open or update a health issue
+        if: steps.checks.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          OPEN=$(gh issue list --repo "$GITHUB_REPOSITORY" --label health --state open --json number --jq '.[0].number')
+          if [ -n "$OPEN" ]; then
+            gh issue comment "$OPEN" --repo "$GITHUB_REPOSITORY" --body-file health.md
+          else
+            gh issue create --repo "$GITHUB_REPOSITORY" --title "Dataset health check failed" --label health --body-file health.md
+          fi
+          exit 1

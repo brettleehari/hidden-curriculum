@@ -1,0 +1,41 @@
+name: Triage Submission
+# First stop on the review line. Every new or edited submission gets an
+# automated review comment and a status label before a maintainer looks.
+on:
+  issues:
+    types: [opened, edited, reopened]
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  triage:
+    if: contains(github.event.issue.labels.*.name, 'new-term') && github.event.issue.state == 'open'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Review the submission
+        id: review
+        run: node scripts/issue-to-csv.js --check --report report.md
+      - name: Post the review and set the status label
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE: ${{ github.event.issue.number }}
+          STATUS: ${{ steps.review.outputs.status }}
+        run: |
+          gh issue comment "$ISSUE" --repo "$GITHUB_REPOSITORY" --edit-last --create-if-none --body-file report.md
+          case "$STATUS" in
+            ready)     ADD=ready-for-review ;;
+            duplicate) ADD=duplicate ;;
+            *)         ADD=needs-changes ;;
+          esac
+          for L in ready-for-review duplicate needs-changes; do
+            if [ "$L" != "$ADD" ]; then
+              gh issue edit "$ISSUE" --repo "$GITHUB_REPOSITORY" --remove-label "$L" || true
+            fi
+          done
+          gh issue edit "$ISSUE" --repo "$GITHUB_REPOSITORY" --add-label "$ADD"

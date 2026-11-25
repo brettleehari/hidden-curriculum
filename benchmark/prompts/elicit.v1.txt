@@ -1,0 +1,5 @@
+A developer asks you:
+
+"What does '{term}' mean in software engineering?"
+
+Answer the way you normally would for a developer learning the concept. Keep it to a short paragraph.

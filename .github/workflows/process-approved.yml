@@ -1,0 +1,78 @@
+name: Process Approved Term
+# Last stop on the review line. A maintainer adds the "approved" label and
+# closes the issue. The gate runs once more, the term lands in the master
+# CSV, and the site and the HuggingFace mirror rebuild from it.
+on:
+  issues:
+    types: [closed]
+
+concurrency:
+  group: dataset-write
+  cancel-in-progress: false
+
+jobs:
+  process:
+    if: contains(github.event.issue.labels.*.name, 'approved') && contains(github.event.issue.labels.*.name, 'new-term')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+    outputs:
+      added: ${{ steps.commit.outputs.added }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Run the gate and append the term
+        id: gate
+        continue-on-error: true
+        run: node scripts/issue-to-csv.js --report report.md
+      - name: Send a failed submission back for changes
+        if: steps.gate.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE: ${{ github.event.issue.number }}
+        run: |
+          if [ ! -s report.md ]; then echo "The pipeline failed before it produced a report. See the workflow run." > report.md; fi
+          gh issue comment "$ISSUE" --repo "$GITHUB_REPOSITORY" --body-file report.md
+          gh issue edit "$ISSUE" --repo "$GITHUB_REPOSITORY" --remove-label approved --add-label needs-changes
+          gh issue reopen "$ISSUE" --repo "$GITHUB_REPOSITORY"
+          exit 1
+      - name: Commit the new term
+        id: commit
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE: ${{ github.event.issue.number }}
+          TERM_ID: ${{ steps.gate.outputs.term_id }}
+        run: |
+          node scripts/csv-to-json.js
+          git config user.name "brettleehari"
+          git config user.email "26477254+brettleehari@users.noreply.github.com"
+          git add data/ site/src/data/ huggingface/README.md
+          git commit -m "Add term $TERM_ID from issue #$ISSUE"
+          git push
+          gh issue comment "$ISSUE" --repo "$GITHUB_REPOSITORY" --body-file report.md
+          gh issue edit "$ISSUE" --repo "$GITHUB_REPOSITORY" --remove-label pending-review --remove-label ready-for-review || true
+          echo "added=true" >> "$GITHUB_OUTPUT"
+
+  # A push made with the workflow token does not start other workflows,
+  # so the rebuilds are called here directly.
+  deploy:
+    needs: process
+    if: needs.process.outputs.added == 'true'
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    uses: ./.github/workflows/deploy-site.yml
+
+  sync:
+    needs: process
+    if: needs.process.outputs.added == 'true'
+    permissions:
+      contents: read
+    uses: ./.github/workflows/sync-huggingface.yml
+    secrets: inherit

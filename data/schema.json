@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["term", "cultural_domain", "what_americans_see", "what_software_means", "where_it_appears", "what_non_americans_read", "affects_all_non_americans"],
+  "properties": {
+    "term_id": { "type": "string", "pattern": "^[A-Z]+-[0-9]{3}$" },
+    "term": { "type": "string", "minLength": 1 },
+    "cultural_domain": { "type": "string" },
+    "what_americans_see": { "type": "string", "minLength": 10 },
+    "what_software_means": { "type": "string", "minLength": 10 },
+    "where_it_appears": { "type": "string" },
+    "what_non_americans_read": { "type": "string", "minLength": 10 },
+    "affects_all_non_americans": { "type": "string", "enum": ["yes", "no"] },
+    "neutral_alternative": { "type": "string" },
+    "domain_id": { "type": "integer", "minimum": 1, "maximum": 12 },
+    "contributor": { "type": "string" },
+    "source_citation": { "type": "string" }
+  }
+}

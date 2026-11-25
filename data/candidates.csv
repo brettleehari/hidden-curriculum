@@ -1,0 +1,280 @@
+term,cultural_domain,american_origin,technical_meaning,domain_id
+ballpark,American Sports,Baseball stadium,Rough estimate,1
+bench,American Sports,Sports reserve seating,Remove from active duty,1
+block,American Sports,Sports obstruction,Prevent progress,1
+champion,American Sports,Sports winner,Advocate strongly for,1
+coach,American Sports,Sports trainer,Mentor or guide,1
+cover all bases,American Sports,Baseball defense,Consider all possibilities,1
+curveball,American Sports,Baseball pitch type,Unexpected challenge,1
+down for the count,American Sports,Boxing knocked down,Defeated or exhausted,1
+draft,American Sports,Sports player selection,Initial version,1
+drop the ball,American Sports,Fumble/error,Fail to follow through,1
+full court press,American Sports,Basketball defensive strategy,Intensive effort,1
+fumble,American Sports,Football dropped ball,Make a mistake,1
+game changer,American Sports,Sports momentum shift,Revolutionary development,1
+game plan,American Sports,Sports strategy,Project or product strategy,1
+go to bat for,American Sports,Baseball support,Advocate for someone,1
+goal,American Sports,Sports objective,Target or objective,1
+halftime,American Sports,Sports mid-game break,Midpoint review,1
+heavy hitter,American Sports,Powerful baseball player,Important person,1
+hit it out of the park,American Sports,Baseball home run,Exceed expectations,1
+home run,American Sports,Baseball over-fence hit,Major success,1
+huddle,American Sports,Football team circle,Quick team meeting,1
+in the bullpen,American Sports,Baseball waiting area,Ready and waiting,1
+in the weeds,American Sports,Golf rough grass,Stuck in details,1
+keep your eye on the ball,American Sports,Sports focus,Stay focused,1
+kickoff,American Sports,Football game start,Project start,1
+league,American Sports,Sports organization,Group of related items,1
+level playing field,American Sports,Fair sports conditions,Equal opportunity,1
+major league,American Sports,Top sports division,Highly professional,1
+minor league,American Sports,Lower sports division,Less important,1
+move the goalposts,American Sports,Change objective location,Change requirements unfairly,1
+MVP,American Sports,Most Valuable Player,Minimum Viable Product,1
+on the ropes,American Sports,Boxing near defeat,In serious trouble,1
+out of left field,American Sports,Baseball unexpected direction,Surprising or unexpected,1
+overtime,American Sports,Extra game time,Working beyond normal hours,1
+par for the course,American Sports,Golf expected score,Expected outcome,1
+pass,American Sports,Sports ball transfer,Skip or transfer,1
+pinch hitter,American Sports,Baseball substitute,Last-minute replacement,1
+play hardball,American Sports,Baseball vs softball,Negotiate aggressively,1
+rookie,American Sports,First-year player,Inexperienced person,1
+saved by the bell,American Sports,Boxing round end,Rescued at last moment,1
+score,American Sports,Sports points,Achieve success,1
+scrum,American Sports,Rugby formation,Agile framework with daily standups,1
+slam dunk,American Sports,Basketball easy score,Guaranteed success,1
+step up to the plate,American Sports,Baseball batting position,Take responsibility,1
+strike out,American Sports,Baseball three misses,Fail completely,1
+sucker punch,American Sports,Unexpected boxing hit,Unfair surprise attack,1
+swing and miss,American Sports,Baseball failed hit,Failed attempt,1
+tackle,American Sports,Football/rugby contact,Address a problem directly,1
+team player,American Sports,Cooperative athlete,Collaborative worker,1
+throw in the towel,American Sports,Boxing surrender,Give up,1
+timeout,American Sports,Sports pause,System pause or break,1
+touch base,American Sports,Baseball tag base,Brief check-in communication,1
+10x engineer,Silicon Valley Business,Multiplication factor,Exceptionally productive developer,2
+ASAP,Silicon Valley Business,As Soon As Possible,Urgent timeline,2
+bandwidth,Silicon Valley Business,Signal capacity,Available time/capacity,2
+beachhead,Silicon Valley Business,D-Day invasion point,Initial market foothold,2
+boil the ocean,Silicon Valley Business,Impossible task,Attempt too much,2
+bootstrap,Silicon Valley Business,Pull yourself up by bootstraps,Self-fund without outside capital,2
+burn rate,Silicon Valley Business,Fire consumption speed,Rate of spending cash,2
+circle back,Silicon Valley Business,Return to origin,Revisit later,2
+day 1,Silicon Valley Business,Beginning mythology,Startup mentality forever,2
+deep dive,Silicon Valley Business,Scuba exploration,Thorough investigation,2
+disagree and commit,Silicon Valley Business,Corporate philosophy,Support despite disagreement,2
+disrupt,Silicon Valley Business,Break apart,Transform industry with innovation,2
+dogfooding,Silicon Valley Business,Eating own dog food,Using own product internally,2
+drink the Kool-Aid,Silicon Valley Business,Jonestown massacre reference,Believe without questioning,2
+drink your own champagne,Silicon Valley Business,Self-celebration,Using own premium product,2
+eating your own cooking,Silicon Valley Business,Self-consumption,Using own product,2
+ecosystem,Silicon Valley Business,Biological environment,Interconnected business network,2
+EOD/COB,Silicon Valley Business,End of Day/Close of Business,Daily deadline,2
+evangelist,Silicon Valley Business,Religious spreader,Passionate product advocate,2
+fail fast,Silicon Valley Business,Quick failure,Learn rapidly from mistakes,2
+flywheel,Silicon Valley Business,Industrial/gym equipment,Self-reinforcing cycle,2
+founder mode,Silicon Valley Business,Pioneer leadership,Hands-on visionary style,2
+FYI,Silicon Valley Business,For Your Information,Informational notification,2
+guru,Silicon Valley Business,Hindi spiritual teacher (Americanized),Expert or authority,2
+heads up,Silicon Valley Business,Look above warning,Advance notice,2
+high agency,Silicon Valley Business,Self-determination,Proactive initiative,2
+hockey stick,Silicon Valley Business,Sports equipment shape,Exponential growth curve,2
+land and expand,Silicon Valley Business,Territorial conquest,"Enter small, grow organically",2
+leverage,Silicon Valley Business,Physics force multiplier,Use resources strategically,2
+loop in,Silicon Valley Business,Include in circle,Add to communication,2
+low-hanging fruit,Silicon Valley Business,Easy orchard picking,Easily achievable goals,2
+moat,Silicon Valley Business,Castle defense water,Competitive advantage barrier,2
+moonshot,Silicon Valley Business,Apollo space program,Ambitious long-term goal,2
+move the needle,Silicon Valley Business,Gauge indicator,Make measurable impact,2
+ninja,Silicon Valley Business,Japanese warrior (Americanized),Highly skilled specialist,2
+north star metric,Silicon Valley Business,Frontier navigation star,Primary guiding metric,2
+ping,Silicon Valley Business,Sonar sound,Send quick message,2
+pivot,Silicon Valley Business,Basketball turn,Strategic direction change,2
+pre-wire,Silicon Valley Business,Electrical preparation,Align stakeholders beforehand,2
+rockstar,Silicon Valley Business,Music celebrity,Top performer,2
+runway,Silicon Valley Business,Airport takeoff strip,Time until funding runs out,2
+scale,Silicon Valley Business,Measurement device,Grow capacity exponentially,2
+strong opinions loosely held,Silicon Valley Business,Conviction with flexibility,Confident but open to change,2
+sync up,Silicon Valley Business,Synchronize,Align understanding,2
+synergy,Silicon Valley Business,Combined effect,Collaborative benefit,2
+take offline,Silicon Valley Business,Computer disconnect,Discuss separately,2
+the ask,Silicon Valley Business,Direct request noun,Specific request needed,2
+the unlock,Silicon Valley Business,Key mechanism,Critical enabling factor,2
+touch base,Silicon Valley Business,Baseball tag base,Brief check-in communication,2
+unicorn,Silicon Valley Business,Mythical rare creature,Billion-dollar startup,2
+win-win,Silicon Valley Business,Mutual victory,Mutually beneficial outcome,2
+abort,Military and Cold War,Mission cancellation,Terminate process,3
+battle-tested,Military and Cold War,Combat proven,Thoroughly proven,3
+blue team,Military and Cold War,Friendly forces,Defense/protection team,3
+boots on the ground,Military and Cold War,Deployed soldiers,People at actual location,3
+breach,Military and Cold War,Wall break,Security violation,3
+bunker,Military and Cold War,Protective shelter,Secure backup location,3
+camouflage,Military and Cold War,Visual concealment,Disguise or hide,3
+checkpoint,Military and Cold War,Military inspection point,Progress verification point,3
+collateral damage,Military and Cold War,Unintended casualties,Unintended negative effects,3
+command line,Military and Cold War,Military command,Text-based interface,3
+de-escalate,Military and Cold War,Reduce conflict,Reduce tension,3
+deploy,Military and Cold War,Troop deployment,Release to production,3
+escalate,Military and Cold War,Increase conflict level,Raise to higher authority,3
+execute,Military and Cold War,Carry out orders,Run a program,3
+fallback,Military and Cold War,Retreat position,Backup option,3
+firewall,Military and Cold War,Fire barrier,Network security barrier,3
+forward deploy,Military and Cold War,Advance positioning,Deploy closer to users,3
+friendly fire,Military and Cold War,Accidental allied attack,Unintended internal harm,3
+guardrails,Military and Cold War,Highway barriers + military,Policy constraints,3
+in the trenches,Military and Cold War,WWI warfare,Doing difficult daily work,3
+kill,Military and Cold War,Terminate life,Stop a process,3
+kill switch,Military and Cold War,Emergency stop,Emergency disable mechanism,3
+launch,Military and Cold War,Missile/rocket launch,Release product,3
+lockdown,Military and Cold War,Secure facility mode,Code freeze period,3
+mission critical,Military and Cold War,Essential to mission,Business essential,3
+nuclear option,Military and Cold War,Extreme weapon,Last resort extreme action,3
+ops,Military and Cold War,Military operations,Operations work,3
+post-mortem,Military and Cold War,After death analysis,Analyze what went wrong,3
+pre-mortem,Military and Cold War,Before death analysis,Anticipate failure causes,3
+radar,Military and Cold War,Detection system,Monitoring system,3
+recon,Military and Cold War,Reconnaissance,Research or investigation,3
+red team,Military and Cold War,Cold War adversary simulation,Adversarial testing group,3
+scorched earth,Military and Cold War,Destruction retreat,Aggressive competitive tactics,3
+stand down,Military and Cold War,Cease readiness,Stop aggressive action,3
+stealth,Military and Cold War,Undetectable aircraft,Hidden or secret,3
+target,Military and Cold War,Aim point,Goal or objective,3
+tiger team,Military and Cold War,Special ops unit,Elite problem-solving group,3
+war room,Military and Cold War,Pentagon planning,Crisis response space,3
+zombie,Military and Cold War,Undead creature,Orphaned process,3
+appetite,American Food Culture,Hunger level,Willingness to invest resources,4
+bite-sized,American Food Culture,Small food portions,Small manageable pieces,4
+boilerplate,American Food Culture,Printed meal menu template,Standard template code,4
+breadcrumb,American Food Culture,Trail of crumbs,Navigation path indicator,4
+can of worms,American Food Culture,Fishing bait container,Complex problematic situation,4
+cherry-pick,American Food Culture,Select best cherries,Select only best items,4
+chocolate,American Food Culture,Flavored confection,Dark mode or variant,4
+cookbook,American Food Culture,Recipe collection,Guide or manual,4
+cookie,American Food Culture,Baked sweet treat,Browser data file,4
+couch potato,American Food Culture,Lazy person on couch,Inactive user,4
+dogfooding,American Food Culture,Eating own dog food,Using own product internally,4
+eat your own cooking,American Food Culture,Self-consumption,Use own product,4
+flavor,American Food Culture,Taste variety,Variant or version,4
+half-baked,American Food Culture,Undercooked,Incomplete or poorly thought out,4
+hot potato,American Food Culture,Too hot to hold food,Controversial issue passed around,4
+ingredient,American Food Culture,Food component,Component or element,4
+low-hanging fruit,American Food Culture,Easy orchard picking,Easily achievable goals,4
+meat and potatoes,American Food Culture,Basic American meal,Core fundamental features,4
+recipe,American Food Culture,Cooking instructions,Step-by-step procedure,4
+spaghetti code,American Food Culture,Tangled pasta,Messy unstructured code,4
+spicy,American Food Culture,Flavorful hot,Controversial or risky,4
+strawberry,American Food Culture,Berry flavor,Another variant,4
+two-pizza team,American Food Culture,Pizza delivery sizing,Small enough team for 2 pizzas,4
+accelerator,American Car Culture,Gas pedal,Speed up process,5
+backseat driver,American Car Culture,Unwanted advice giver,Micromanager,5
+bottleneck,American Car Culture,Narrow passage,Constraint limiting flow,5
+brake,American Car Culture,Stop pedal,Slow or stop,5
+collision,American Car Culture,Vehicles hitting,Conflicting changes,5
+congestion,American Car Culture,Too many vehicles,System overload,5
+crash,American Car Culture,Vehicle collision,System failure,5
+cruise control,American Car Culture,Automatic speed,Automatic steady operation,5
+dead end,American Car Culture,No exit road,No viable path forward,5
+detour,American Car Culture,Alternate route,Workaround,5
+fast lane,American Car Culture,High-speed lane,Quick path to success,5
+guardrails,American Car Culture,Highway barriers + military,Policy constraints,5
+in the driver's seat,American Car Culture,Controlling vehicle,In control,5
+kick the tires,American Car Culture,Test vehicle,Preliminary testing,5
+merge,American Car Culture,Lane combining,Combine code branches,5
+milestone,American Car Culture,Distance marker,Progress checkpoint,5
+offboarding,American Car Culture,Getting off vehicle,User departure process,5
+onboarding,American Car Culture,Getting on vehicle,New user introduction,5
+throttle,American Car Culture,Engine speed control,Rate limiting,5
+traffic,American Car Culture,Vehicle congestion,Network data flow,5
+under the hood,American Car Culture,Engine compartment,Internal implementation,5
+blackout,American Household,Complete power loss,Total outage,6
+brownout,American Household,Partial power loss,Degraded service,6
+clean up,American Household,Tidying home,Remove unnecessary items,6
+footprint,American Household,Floor space used,Resource usage,6
+fuse,American Household,Electrical safety device,Protection mechanism,6
+hardwired,American Household,Permanently connected,Fixed/unchangeable,6
+housekeeping,American Household,Home maintenance,Maintenance tasks,6
+overhead,American Household,Attic/above storage,Additional resource cost,6
+plug-in,American Household,Electrical outlet device,Software extension,6
+power cycle,American Household,Turn off and on,Full restart,6
+reboot,American Household,Restart (kick again),Restart system,6
+recycle bin,American Household,Recycling container,Recoverable deleted items,6
+socket,American Household,Electrical outlet,Network connection point,6
+spring cleaning,American Household,Annual deep clean,Major cleanup effort,6
+switch,American Household,Light switch,Toggle control,6
+trash,American Household,Household waste,Deleted items,6
+unplug,American Household,Remove from outlet,Disconnect,6
+wire/wiring,American Household,Electrical cables,Connections,6
+brownfield,Wild West and Frontier,Previously developed,Existing codebase work,7
+claim,Wild West and Frontier,Territory assertion,Request for ownership,7
+corral,Wild West and Frontier,Animal enclosure,Contain or organize,7
+frontier,Wild West and Frontier,Unexplored territory,Cutting edge,7
+gold rush,Wild West and Frontier,California 1849,Rapid opportunity pursuit,7
+greenfield,Wild West and Frontier,Undeveloped land,New project from scratch,7
+lasso,Wild West and Frontier,Rope catching tool,Capture or contain,7
+outlaw,Wild West and Frontier,Criminal outside law,Unauthorized user,7
+pioneer,Wild West and Frontier,First settler,Early adopter/creator,7
+posse,Wild West and Frontier,Law enforcement group,Team assembled for task,7
+roundup,Wild West and Frontier,Cattle gathering,Summary or collection,7
+rustler,Wild West and Frontier,Cattle thief,Resource thief,7
+sheriff,Wild West and Frontier,Town law enforcement,Security administrator,7
+stake,Wild West and Frontier,Land claim marker,Investment or interest,7
+trailblazer,Wild West and Frontier,Path creator,Innovator,7
+wild west,Wild West and Frontier,Lawless frontier,Unregulated environment,7
+bootcamp,American Pop Culture,Military/fitness training,Intensive learning program,8
+easter egg,American Pop Culture,Hidden holiday treat,Hidden feature,8
+ghost,American Pop Culture,Supernatural spirit,Deleted but visible,8
+gremlin,American Pop Culture,Mischievous creature,Bug or problem,8
+guru,American Pop Culture,Hindi spiritual teacher (Americanized),Expert or authority,8
+influencer,American Pop Culture,Social media celebrity,Person with reach,8
+magic,American Pop Culture,Supernatural power,Impressive capability,8
+ninja,American Pop Culture,Japanese warrior (Americanized),Highly skilled specialist,8
+rockstar,American Pop Culture,Music celebrity,Top performer,8
+skeleton,American Pop Culture,Bone structure,Minimal framework,8
+spam,American Pop Culture,Monty Python sketch,Unwanted messages,8
+thought leader,American Pop Culture,Celebrity intellectual,Industry expert to follow,8
+troll,American Pop Culture,Internet harasser (evolved),Disruptive person,8
+unicorn,American Pop Culture,Mythical rare creature,Billion-dollar startup,8
+vampire,American Pop Culture,Blood-drinking creature,Resource draining,8
+wizard,American Pop Culture,Fantasy magic user,Expert at something,8
+zombie,American Pop Culture,Undead creature,Orphaned process,8
+architect,American Industrial Trades,Building designer,System designer,9
+blueprint,American Industrial Trades,Construction plan,Technical design,9
+drill down,American Industrial Trades,Mining/construction,Investigate deeper,9
+forge,American Industrial Trades,Metalworking shop,Create or build,9
+foundation,American Industrial Trades,Building base,Core infrastructure,9
+framework,American Industrial Trades,Building structure,Code foundation,9
+hammer,American Industrial Trades,Tool,Command line tool,9
+leverage,American Industrial Trades,Physics force multiplier,Use resources strategically,9
+nuts and bolts,American Industrial Trades,Hardware basics,Fundamental details,9
+pipeline,American Industrial Trades,Oil/gas transport,Data processing sequence,9
+refactor,American Industrial Trades,Factory reorganization,Code restructuring,9
+scaffolding,American Industrial Trades,Construction support,Temporary supporting code,9
+toolbox,American Industrial Trades,Tool container,Collection of utilities,9
+wrench,American Industrial Trades,Tool,Configuration tool,9
+backdoor,Cybersecurity,Secret house entrance,Hidden access point,10
+cloak,Cybersecurity,Concealing garment,Hide or conceal,10
+man in the middle,Cybersecurity,Interception spy,Communication interception,10
+masquerade,Cybersecurity,Costume party,Pretending to be another,10
+phishing,Cybersecurity,Fishing with ph,Deceptive data theft,10
+sniffing,Cybersecurity,Dog detection,Network packet capture,10
+spear phishing,Cybersecurity,Targeted fishing,Personalized attack,10
+spoofing,Cybersecurity,Impersonation,Identity faking,10
+trojan,Cybersecurity,Greek horse trick,Hidden malicious code,10
+whaling,Cybersecurity,Big game hunting,Targeting executives,10
+flame,American Hacker Subculture,Angry fire,Hostile message,11
+geek,American Hacker Subculture,Carnival performer,Technical enthusiast,11
+hack,American Hacker Subculture,Rough cut,Clever solution or breach,11
+hacker,American Hacker Subculture,One who hacks,Skilled programmer or attacker,11
+leet/1337,American Hacker Subculture,Elite misspelling,Expert status,11
+lurk,American Hacker Subculture,Hide and watch,Read without posting,11
+nerd,American Hacker Subculture,1950s slang,Intellectual enthusiast,11
+noob,American Hacker Subculture,Newbie abbreviation,Inexperienced person,11
+pwn,American Hacker Subculture,Typo of own,Defeat or compromise,11
+troll,American Hacker Subculture,Internet harasser (evolved),Disruptive person,11
+bang,American Slang,Comic book sound,Exclamation mark (!),12
+FOMO,American Slang,Social media anxiety,Fear of Missing Out,12
+hash,American Slang,Pound symbol evolution,Number sign (#),12
+LGTM,American Slang,Casual approval,Looks Good To Me,12
+TL;DR,American Slang,Reddit/forum,Too Long; Did Not Read,12
+touch grass,American Slang,Gen Z meme,Engage with physical world,12
+vibe coding,American Slang,Feeling-based,Intent-described programming,12
+YOLO,American Slang,Drake song,You Only Live Once,12
