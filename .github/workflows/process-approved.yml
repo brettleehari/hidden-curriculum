@@ -65,6 +65,7 @@ jobs:
     if: needs.process.outputs.added == 'true'
     permissions:
       contents: read
+      actions: read
       pages: write
       id-token: write
     uses: ./.github/workflows/deploy-site.yml
