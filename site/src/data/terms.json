@@ -418,5 +418,19 @@
     "domain_id": 9,
     "contributor": "Hari Prasad Sudharsan",
     "source_citation": "Original research"
+  },
+  {
+    "term_id": "SPORTS-006",
+    "term": "home run",
+    "cultural_domain": "American Sports",
+    "what_americans_see": "A baseball hit over the outfield fence, the best result of an at-bat",
+    "what_software_means": "A major success on a project, launch, or release",
+    "where_it_appears": "Product reviews, launch retrospectives, sales calls",
+    "what_non_americans_read": "Running back to your house",
+    "affects_all_non_americans": "yes",
+    "neutral_alternative": "major success",
+    "domain_id": 1,
+    "contributor": "Hari Prasad Sudharsan",
+    "source_citation": "Community contribution"
   }
 ]

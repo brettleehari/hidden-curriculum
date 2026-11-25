@@ -1,14 +1,14 @@
 {
-  "validated": 30,
-  "candidates": 279,
-  "candidateTerms": 268,
-  "layer1": 24,
-  "layer1Pct": 80,
+  "validated": 31,
+  "candidates": 278,
+  "candidateTerms": 267,
+  "layer1": 25,
+  "layer1Pct": 81,
   "domains": [
     {
       "id": 1,
       "name": "American Sports",
-      "count": 4
+      "count": 5
     },
     {
       "id": 2,
